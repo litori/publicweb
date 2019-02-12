@@ -1,0 +1,23 @@
+<html>
+<head>
+<title> Demo Player </title>
+
+<script type="text/javascript" src="https://rawgit.com/EldinZenderink/SubPlayerJS/master/SubPlayerJS.js" ></script>
+</head>
+<body>
+<center>
+ <div id="divIDwhereVideoPlayerWillBeLoaded"></div> 
+ <br />
+ <div id="divIDwhereVideoPlayerWillBeLoaded2"></div> 
+</center
+<script>
+
+	var newPlayer = new SubPlayerJS('#divIDwhereVideoPlayerWillBeLoaded', 'https://s3.n2.kinopu.com/video/Running.Man.E438.190210.720p-NEXT.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ZEJ5QLG8D010G913E49G%2F20190212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190212T031952Z&X-Amz-Expires=14400&X-Amz-SignedHeaders=host&X-Amz-Signature=735d9f63f72c4044254b3b2bacdc947534c5e2e22c5a591c3854b2e2c98cb9bc');
+	newPlayer.setSubtitle('https://s3.n2.kinopu.com/video/Running.Man.E438.190210.720p-NEXT.srt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ZEJ5QLG8D010G913E49G%2F20190212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190212T032016Z&X-Amz-Expires=14400&X-Amz-SignedHeaders=host&X-Amz-Signature=4cb52c006e8c635b38dc57f3bb255c75815e4a85db38c3da67a81b1e623a3176'); 
+
+	var newPlayer2 = new SubPlayerJS('#divIDwhereVideoPlayerWillBeLoaded2', 'http://peach.themazzone.com/durian/movies/sintel-1280-surround.mp4');
+	newPlayer2.setSubtitle('https://raw.githubusercontent.com/EldinZenderink/SubPlayerJS/master/DemoSubtitle/sintel.ass'); 
+
+</script>
+</body>
+</html>
